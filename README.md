@@ -13,7 +13,7 @@ This repository contains my solutions for the **50 Programming Challenges** focu
 *   **Fundamental Concepts:** Mastering Loops, Functions, and Conditional logic.
     **المفاهيم الأساسية:** إتقان الحلقات التكرارية، الدوال، والمنطق الشرطي.
 *   **Clean Code:** Writing readable and efficient C++ code.
-    **الكود النظيف:** كتابة كود برمي واضح وفعال.
+    **الكود النظيف:** كتابة كود برمجي واضح وفعال.
 
 ---
 
