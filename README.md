@@ -9,30 +9,41 @@ This repository contains my solutions for the **50 Programming Challenges** focu
 ## 🎯 Project Goals | أهداف المشروع
 
 *   **Logic Building:** Breaking down complex problems into manageable sub-tasks.
-    **بناء المنطق:** تفكيك المشكلات المعقدة إلى مهام فرعية بسيطة.
 *   **Fundamental Concepts:** Mastering Loops, Functions, and Conditional logic.
-    **المفاهيم الأساسية:** إتقان الحلقات التكرارية، الدوال، والمنطق الشرطي.
 *   **Clean Code:** Writing readable and efficient C++ code.
-    **الكود النظيف:** كتابة كود برمجي واضح وفعال.
+
+---
+
+## 📈 What I Learned | ما تعلمته | Ce que j'ai appris
+
+Through this journey, I have mastered several software engineering principles:
+من خلال هذه الرحلة، أتقنت العديد من مبادئ هندسة البرمجيات:
+À travers ce parcours, j'ai maîtrisé plusieurs principes de génie logiciel :
+
+### 🧠 Problem Solving Strategy
+*   **Divide & Conquer:** Breaking complex logic into smaller, solvable parts.
+    **فرق تسد:** تقسيم المنطق المعقد إلى أجزاء صغيرة قابلة للحل.
+    **Diviser pour régner :** Diviser une logique complexe en petites parties solubles.
+
+### 💻 Coding Standards (Clean Code)
+*   **DRY (Don't Repeat Yourself):** Reducing repetition of code.
+    **مبدأ عدم التكرار:** تقليل تكرار الكود البرمجي.
+    **DRY :** Réduire la répétition du code.
+*   **SRP (Single Responsibility Principle):** Each function does one thing.
+    **مسؤولية واحدة:** كل دالة مسؤولة عن وظيفة واحدة فقط.
+    **SRP :** Chaque fonction a une seule responsabilité.
+*   **Reusability:** Writing code that can be used multiple times.
+    **إعادة الاستخدام:** كتابة كود يمكن استخدامه عدة مرات.
+    **Réutilisabilité :** Écrire du code utilisable plusieurs fois.
+*   **Readability:** Writing clean code that is easy to understand.
+    **سهولة القراءة:** كتابة كود نظيف وسهل الفهم.
+    **Lisibilité :** Écrire un code propre et facile à comprendre.
 
 ---
 
 ## 📚 Educational Source | المصدر التعليمي
 
 These problems are part of the **"Algorithms & Problem Solving Level 1"** course provided by **Dr. Mohammed Abu-Hadhoud** at [ProgrammingAdvices](https://programmingadvices.com).
-
-هذه المسائل هي جزء من دورة **"الخوارزميات وحل المشكلات - المستوى الأول"** المقدمة من الدكتور **محمد أبو هدهود** عبر منصة **ProgrammingAdvices**.
-
----
-
-## 📂 Repository Content | محتوى المستودع
-
-The repository is organized by problem number and description for easy navigation.
-المستودع منظم حسب رقم المسألة ووصفها لسهولة التصفح والوصول.
-
-*   `Problem01_PrintName.cpp`
-*   `Problem02_AskForName.cpp`
-*   ... and so on.
 
 ---
 
@@ -43,4 +54,5 @@ The repository is organized by problem number and description for easy navigatio
 
 ---
 *If you find these solutions helpful, feel free to ⭐ the repository!*
+
 *إذا وجدت هذه الحلول مفيدة، لا تتردد في دعم المستودع بنجمة!*
