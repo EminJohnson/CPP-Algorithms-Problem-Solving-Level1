@@ -1,63 +1,65 @@
 #include <iostream>
 #include <string>
+#include <limits>
 
 using namespace std;
 
-void GetValidateNumber(unsigned short& Number)
+int ReadInt(string Message, int From, int To)
 {
+	int Number = 0;
+	cout << Message;
+
 	while (true)
 	{
 		if (!(cin >> Number))
 		{
 			cin.clear();
-			cin.ignore(1000, '\n');
-			cout << "Invalid!!, Enter a Real Number : \n";
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			cout << "Invalid !!, Enter a real Number : \n";
 			continue;
 		}
 
-		if (Number < 0 || Number > 9999)
+		if (Number < From || Number > To)
 		{
-			cout << " Enter an Other Number : \n";
+			cout << "Enter a Number From " + to_string(From) + " To " + to_string(To) + " :\n";
 			continue;
 		}
-		break;
+
+		return Number;
 	}
 }
 
-unsigned short ReadATMPIN()
+bool IsTrue(int PINCODE)
 {
-	unsigned short ATMPIN = 0;
-	cout << "Enter Your ATM PIN : \n";
-	GetValidateNumber(ATMPIN);
-
-	return ATMPIN;
+	return (PINCODE == 1234);
 }
 
-void isTrue(unsigned short& ATMPIN)
+void PrintResult(int PINCODE)
 {
-	unsigned short Counter = 3;
+	int Count = 3;
+
 	do
 	{
-		Counter--;
+		if (IsTrue(PINCODE))
+		{
+			cout << 7500 << endl; return;
+		}
 
-		if (ATMPIN == 1234) break;
-		cout << "\nWrong PIN, you have " + to_string(Counter) + " more tries\n";
-		GetValidateNumber(ATMPIN);
+		Count--;
 
-	} while (Counter > 1 && ATMPIN != 1234);
+		if (Count > 0) cout << "Wrong PIN ! ," + to_string(Count) + " Chance";
 
+		PINCODE = ReadInt(" Enter your PIN CODE : \n", 0, 9999);
+	} while (Count > 1);
 
-
-}
-
-void PrintBalace(unsigned short ATMPIN)
-{
-	isTrue(ATMPIN);
-	cout << ((ATMPIN == 1234) ? "Your Balance is : 7500 \n" : "Card Locked!\n");
+	cout << "Blocked";
 }
 
 int main()
 {
-	PrintBalace(ReadATMPIN());
+	int PINCODE = ReadInt("Enter your PIN CODE : \n", 0, 9999);
+
+	PrintResult(PINCODE);
+
 	return 0;
 }
